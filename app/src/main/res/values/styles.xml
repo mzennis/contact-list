@@ -1,0 +1,62 @@
+<resources>
+    <style name="MeyTheme.PopupMenu.Style" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:divider">@color/dc_lightestgray</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="MeyTheme.Edittext">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/dc_lightestgray</item>
+        <item name="android:textColorHint">@color/dc_lightestgray</item>
+    </style>
+
+    <style name="MeyTheme.PopupMenu" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">#F5F5F5</item>
+        <item name="android:textColor">@color/dc_gray</item>
+        <item name="android:background">#F5F5F5</item>
+    </style>
+
+    <style name="MeyTheme.Toolbar.Overlay" parent="@style/MeyTheme.Toolbar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="MeyTheme.Toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:titleTextStyle">@style/MeyTheme.TextPrimary</item>
+        <item name="android:actionMenuTextColor">@color/dc_darkgray</item>
+        <item name="colorControlNormal">@color/textColorPrimary</item>
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <style name="MeyTheme.TextPrimary" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="MeyTheme.Dialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColor">@color/dc_gray</item>
+        <item name="android:background">#F5F5F5</item>
+    </style>
+
+    <style name="MeyTheme.Toolbar.Popup" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/dc_darkgray</item>
+        <item name="actionMenuTextColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="MeyTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="popupMenuStyle">@style/MeyTheme.PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/MeyTheme.PopupMenu.Style</item>
+        <item name="android:actionBarStyle">@style/MeyTheme.Toolbar</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/dc_white</item>
+    </style>
+
+</resources>
