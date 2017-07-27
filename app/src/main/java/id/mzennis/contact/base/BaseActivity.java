@@ -23,10 +23,15 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 
+import java.io.File;
+
 import id.mzennis.contact.R;
+import id.mzennis.contact.config.Config;
+import id.mzennis.contact.config.DaggerConfig;
 import id.mzennis.contact.helper.ApplicationHelper;
 import id.mzennis.contact.helper.LoggerHelper;
 import id.mzennis.contact.helper.VersionHelper;
+import id.mzennis.contact.network.NetworkModule;
 
 /**
  * Created by mzennis on 7/25/17.
@@ -35,6 +40,18 @@ import id.mzennis.contact.helper.VersionHelper;
 public class BaseActivity extends AppCompatActivity {
 
     protected Toolbar toolbar;
+    protected Config config;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        File cacheFile = new File(getCacheDir(), "responses");
+        config = DaggerConfig.builder().networkModule(new NetworkModule(cacheFile)).build();
+    }
+
+    public Config getConfig() {
+        return config;
+    }
 
     @Override
     public void setContentView(int layoutResID) {

@@ -42,7 +42,7 @@ public abstract class NavigationDrawerActivity extends BaseActivity {
     protected abstract BaseFragment getFragment(int itemId);
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
         ButterKnife.bind(this);
@@ -193,23 +193,16 @@ public abstract class NavigationDrawerActivity extends BaseActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         super.onOptionsItemSelected(item);
-//        if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
-//            if (! navigationDrawerOpenedOrOpening()) {
-//                onNavigationDrawerOpened();
-//            } else {
-//                onNavigationDrawerClosed();
-//            }
-//            return true;
-//        }
+        if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
+            if (! navigationDrawerOpenedOrOpening()) {
+                onNavigationDrawerOpened();
+            } else {
+                onNavigationDrawerClosed();
+            }
+            return true;
+        }
         return true;
     }
 

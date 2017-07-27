@@ -11,6 +11,21 @@
     <color name="controlOn">@color/colorAccent</color>
     <color name="divider">#1F000000</color>
 
+    <color name="pink">#F50057</color>
+    <color name="purple">#673AB7</color>
+    <color name="orange">#F44336</color>
+    <color name="blue">#2196F3</color>
+    <color name="darkblue">#3F51B5</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="darkcyan">#03A9F4</color>
+    <color name="green">#4CAF50</color>
+    <color name="darkgreen">#009688</color>
+    <color name="lightgreen">#CDDC39</color>
+    <color name="lightesgreen">#8BC34A</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="brown">#795548</color>
+    <color name="jingga">#FF9800</color>
+
     <color name="dc_black">#000000</color>
     <color name="dc_darkgray">#ff444444</color>
     <color name="dc_gray">#ff888888</color>
