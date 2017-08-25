@@ -1,4 +1,4 @@
-package id.mzennis.contact.main;
+package id.mzennis.contact.contact;
 
 import android.content.Context;
 import android.graphics.drawable.GradientDrawable;

@@ -1,4 +1,4 @@
-package id.mzennis.contact.main;
+package id.mzennis.contact.contact;
 
 import android.content.DialogInterface;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package id.mzennis.contact.main;
+package id.mzennis.contact.contact;
 
 import android.content.Context;
 
@@ -26,7 +26,7 @@ public class ContactPresenter extends BasePresenter<ContactView> {
 
     public void getContacts() {
         mIView.onStartGetContact();
-        Subscription subscription = getService().getContactList(new Service.GetContactListCallback() {
+        Subscription subscription = getService().getContactList(new Service.DefaultCallback() {
             @Override
             public void onSuccess(Contact[] contacts) {
                 mIView.onFinishGetContact();

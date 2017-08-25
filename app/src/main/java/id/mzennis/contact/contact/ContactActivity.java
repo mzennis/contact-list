@@ -1,4 +1,4 @@
-package id.mzennis.contact.main;
+package id.mzennis.contact.contact;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

@@ -16,7 +16,7 @@ public class Service {
         this.networkService = networkService;
     }
 
-    public Subscription getContactList(final GetContactListCallback callback) {
+    public Subscription getContactList(final DefaultCallback callback) {
 
         return networkService.getContact()
                 .subscribeOn(Schedulers.io())
@@ -45,7 +45,7 @@ public class Service {
                 });
     }
 
-    public interface GetContactListCallback {
+    public interface DefaultCallback {
         void onSuccess(Contact[] contacts);
         void onError(NetworkError networkError);
     }

@@ -12,13 +12,16 @@
         android:supportsRtl="true"
         android:name=".MainApplication"
         android:theme="@style/MeyTheme">
-        <activity android:name=".main.ContactActivity">
+        <activity android:name=".contact.ContactActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".contact.detail.DetailContactActivity" />
+
     </application>
 
 </manifest>
